@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home | Outline For Advertising</title>
+  </head>
+  <body>
+    <div class="arrow appear">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <a
+      href="https://wa.me/201005036232"
+      target="_blank"
+      class="whatsapp d-flex align-items-center justify-content-center"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-home p-2">
+      <div class="container">
+        <a class="navbar-brand text-white logo-white" href="index.html">
+          <div class="logo">
+            <img src="../assets/img/logo.png" alt="" class="mw-100" />
+          </div>
+        </a>
+        <a class="navbar-brand text-white logo-black" href="index.html">
+          <div class="logo">
+            <img src="./assets/img/logo.png" alt="" class="mw-100" />
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto gap-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about/">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./our-services/">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./our-services/">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./our-services/">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact/">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Carousel -->
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade position-relative"
+    >
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner position-relative">
+          <div class="carousel-item active">
+            <img
+              src="../assets/img/photography.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/img/production.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/img/ui-design.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/vfx.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <!-- <div class="carousel-item">
+              <img src="./assets/img/seo.jpg" class="d-block w-100" alt="..." />
+            </div> -->
+          <div class="carousel-item">
+            <img
+              src="../assets/img/video-editing.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="content">
+        <div
+          class="aos-init aos-animatecont d-flex flex-column align-items-center"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
+          <h1 class="d-flex flex-column">
+            <span class="top">Outline</span>
+            <span>For Advertising</span>
+          </h1>
+          <p class="text-center">
+            We offer you smart solutions that help you enhance your capabilities
+            and production
+          </p>
+        </div>
+        <a
+          href="#video"
+          class="good-btn btn btn-white btn-outline-white px-4 py-3 popup-vimeo d-flex align-items-center justify-content-center m-auto gap-2"
+          onclick="playVideo()"
+        >
+          <i class="fa-solid fa-play"></i>
+          <span>Watch video</span>
+        </a>
+      </div>
+    </div>
+    <!-- End Carousel -->
+    <!-- Start Services -->
+    <div class="our-services pt-5 pb-5">
+      <div class="container">
+        <div class="head mb-4">
+          <h2 class="text-center"><span class="top">Our</span> Services</h2>
+          <p class="text-center">
+            We are a company specialized in digital marketing and technical
+            development. We aim to provide innovative and effective solutions to
+            our customers in the world of internet and technology.
+          </p>
+        </div>
+        <div class="row">
+          <div
+            class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3"
+          >
+            <div
+              class="box d-flex flex-column align-items-center justify-content-center gap-2 rounded-3 py-3"
+            >
+              <?xml version="1.0" encoding="utf-8"?><svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 114.13"
+                style="enable-background: new 0 0 122.88 114.13"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M23.2,29.44V3.35V0.53C23.2,0.24,23.44,0,23.73,0h2.82h54.99c0.09,0,0.17,0.02,0.24,0.06l1.93,0.8l-0.2,0.49l0.2-0.49 c0.08,0.03,0.14,0.08,0.2,0.14l12.93,12.76l0.84,0.83l-0.37,0.38l0.37-0.38c0.1,0.1,0.16,0.24,0.16,0.38v1.18v13.31 c0,0.29-0.24,0.53-0.53,0.53h-5.61c-0.29,0-0.53-0.24-0.53-0.53v-6.88H79.12H76.3c-0.29,0-0.53-0.24-0.53-0.53 c0-0.02,0-0.03,0-0.05v-2.77h0V6.69H29.89v22.75c0,0.29-0.24,0.53-0.53,0.53h-5.64C23.44,29.97,23.2,29.73,23.2,29.44L23.2,29.44z M30.96,67.85h60.97h0c0.04,0,0.08,0,0.12,0.01c0.83,0.02,1.63,0.19,2.36,0.49c0.79,0.33,1.51,0.81,2.11,1.41 c0.59,0.59,1.07,1.31,1.4,2.1c0.3,0.73,0.47,1.52,0.49,2.35c0.01,0.04,0.01,0.08,0.01,0.12v0v9.24h13.16h0c0.04,0,0.07,0,0.11,0.01 c0.57-0.01,1.13-0.14,1.64-0.35c0.57-0.24,1.08-0.59,1.51-1.02c0.43-0.43,0.78-0.94,1.02-1.51c0.21-0.51,0.34-1.07,0.35-1.65 c-0.01-0.03-0.01-0.07-0.01-0.1v0V43.55v0c0-0.04,0-0.07,0.01-0.11c-0.01-0.57-0.14-1.13-0.35-1.64c-0.24-0.56-0.59-1.08-1.02-1.51 c-0.43-0.43-0.94-0.78-1.51-1.02c-0.51-0.22-1.07-0.34-1.65-0.35c-0.03,0.01-0.07,0.01-0.1,0.01h0H11.31h0 c-0.04,0-0.08,0-0.11-0.01c-0.57,0.01-1.13,0.14-1.64,0.35C9,39.51,8.48,39.86,8.05,40.29c-0.43,0.43-0.78,0.94-1.02,1.51 c-0.21,0.51-0.34,1.07-0.35,1.65c0.01,0.03,0.01,0.07,0.01,0.1v0v35.41v0c0,0.04,0,0.08-0.01,0.11c0.01,0.57,0.14,1.13,0.35,1.64 c0.24,0.57,0.59,1.08,1.02,1.51C8.48,82.65,9,83,9.56,83.24c0.51,0.22,1.07,0.34,1.65,0.35c0.03-0.01,0.07-0.01,0.1-0.01h0h13.16 v-9.24v0c0-0.04,0-0.08,0.01-0.12c0.02-0.83,0.19-1.63,0.49-2.35c0.31-0.76,0.77-1.45,1.33-2.03c0.02-0.03,0.04-0.06,0.07-0.08 c0.59-0.59,1.31-1.07,2.1-1.4c0.73-0.3,1.52-0.47,2.36-0.49C30.87,67.85,30.91,67.85,30.96,67.85L30.96,67.85L30.96,67.85z M98.41,90.27v17.37v0c0,0.04,0,0.08-0.01,0.12c-0.02,0.83-0.19,1.63-0.49,2.36c-0.33,0.79-0.81,1.51-1.41,2.11 c-0.59,0.59-1.31,1.07-2.1,1.4c-0.73,0.3-1.52,0.47-2.35,0.49c-0.04,0.01-0.08,0.01-0.12,0.01h0H30.96h0 c-0.04,0-0.08-0.01-0.12-0.01c-0.83-0.02-1.62-0.19-2.35-0.49c-0.79-0.33-1.5-0.81-2.1-1.4c-0.6-0.6-1.08-1.31-1.41-2.11 c-0.3-0.73-0.47-1.52-0.49-2.35c-0.01-0.04-0.01-0.08-0.01-0.12v0V90.27H11.31h0c-0.04,0-0.08,0-0.12-0.01 c-1.49-0.02-2.91-0.32-4.2-0.85c-1.39-0.57-2.63-1.41-3.67-2.45c-1.04-1.04-1.88-2.28-2.45-3.67c-0.54-1.3-0.84-2.71-0.85-4.2 C0,79.04,0,79,0,78.96v0V43.55v0c0-0.04,0-0.08,0.01-0.12c0.02-1.49,0.32-2.9,0.85-4.2c0.57-1.39,1.41-2.63,2.45-3.67 c1.04-1.04,2.28-1.88,3.67-2.45c1.3-0.54,2.71-0.84,4.2-0.85c0.04-0.01,0.08-0.01,0.12-0.01h0h100.25h0c0.04,0,0.08,0,0.12,0.01 c1.49,0.02,2.91,0.32,4.2,0.85c1.39,0.57,2.63,1.41,3.67,2.45c1.04,1.04,1.88,2.28,2.45,3.67c0.54,1.3,0.84,2.71,0.85,4.2 c0.01,0.04,0.01,0.08,0.01,0.12v0v35.41v0c0,0.04,0,0.08-0.01,0.12c-0.02,1.49-0.32,2.9-0.85,4.2c-0.57,1.39-1.41,2.63-2.45,3.67 c-1.04,1.04-2.28,1.88-3.67,2.45c-1.3,0.54-2.71,0.84-4.2,0.85c-0.04,0.01-0.08,0.01-0.12,0.01h0H98.41L98.41,90.27z M89.47,15.86 l-7-6.91v6.91H89.47L89.47,15.86z M91.72,74.54H31.16v32.89h60.56V74.54L91.72,74.54z"
+                  />
+                </g>
+              </svg>
+              <span class="fw-bold">Printing</span>
+            </div>
+          </div>
+          <div
+            class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3"
+          >
+            <div
+              class="box d-flex flex-column align-items-center justify-content-center gap-2 rounded-3 py-3"
+            >
+              <?xml version="1.0" encoding="utf-8"?><svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 118.3"
+                style="enable-background: new 0 0 122.88 118.3"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M7.51,0h107.85c2.05,0,3.93,0.85,5.29,2.21v0l0.01,0.01l0.01,0.01l0.01,0.01c1.36,1.37,2.2,3.24,2.2,5.29 v103.28c0,2.07-0.85,3.95-2.21,5.31c-1.36,1.36-3.24,2.21-5.31,2.21H7.51c-2.05,0-3.93-0.84-5.3-2.21l-0.01-0.01l-0.01-0.01 l-0.01-0.01c-1.36-1.37-2.2-3.24-2.2-5.29V7.51C0,5.44,0.84,3.56,2.2,2.2c0.08-0.08,0.16-0.16,0.25-0.23C3.79,0.75,5.57,0,7.51,0 L7.51,0z M65.79,98.75c-1.58,0-2.86-1.39-2.86-3.11c0-1.72,1.28-3.11,2.86-3.11h35.22c1.58,0,2.86,1.39,2.86,3.11 c0,1.72-1.28,3.11-2.86,3.11H65.79L65.79,98.75z M20.82,98.75c-1.56,0-2.83-1.39-2.83-3.11c0-1.72,1.27-3.11,2.83-3.11h32.65 c1.56,0,2.83,1.39,2.83,3.11c0,1.72-1.27,3.11-2.83,3.11H20.82L20.82,98.75z M19.69,85.16c-1.56,0-2.83-1.39-2.83-3.11 c0-1.72,1.27-3.11,2.83-3.11h32.65c1.56,0,2.83,1.39,2.83,3.11c0,1.72-1.27,3.11-2.83,3.11H19.69L19.69,85.16z M65.79,85.16 c-1.58,0-2.86-1.39-2.86-3.11c0-1.72,1.28-3.11,2.86-3.11h35.22c1.58,0,2.86,1.39,2.86,3.11c0,1.72-1.28,3.11-2.86,3.11H65.79 L65.79,85.16z M17.59,34.77h85.94v33.65H17.59V34.77L17.59,34.77z M116.09,26.93c-0.24,0.04-0.48,0.06-0.72,0.06H7.51 c-0.25,0-0.49-0.02-0.72-0.06v83.86c0,0.2,0.08,0.38,0.2,0.51l0,0l0.01,0.01c0.13,0.13,0.3,0.2,0.51,0.2h107.85 c0.19,0,0.37-0.08,0.51-0.22c0.13-0.13,0.22-0.31,0.22-0.51V26.93L116.09,26.93z M50.12,9.7c2.7,0,4.88,2.19,4.88,4.88 s-2.19,4.88-4.88,4.88s-4.88-2.19-4.88-4.88S47.43,9.7,50.12,9.7L50.12,9.7z M33.05,9.7c2.7,0,4.88,2.19,4.88,4.88 s-2.19,4.88-4.88,4.88c-2.7,0-4.88-2.19-4.88-4.88S30.36,9.7,33.05,9.7L33.05,9.7z M15.99,9.7c2.7,0,4.88,2.19,4.88,4.88 s-2.19,4.88-4.88,4.88c-2.7,0-4.88-2.19-4.88-4.88S13.29,9.7,15.99,9.7L15.99,9.7z"
+                  />
+                </g>
+              </svg>
+              <span class="fw-bold">Website Design</span>
+            </div>
+          </div>
+          <div
+            class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3"
+          >
+            <div
+              class="box d-flex flex-column align-items-center justify-content-center gap-2 rounded-3 py-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                viewBox="0 0 512 445.97"
+              >
+                <path
+                  d="m76.83 122.53-20.86-20.01H8.46c-2.3 0-4.42-.96-5.96-2.48A8.42 8.42 0 0 1 0 94.06V29.13c0-2.33.97-4.44 2.49-5.97l.21-.19c1.52-1.43 3.57-2.31 5.76-2.31h85.18c2.3 0 4.43.97 5.96 2.5 1.53 1.53 2.5 3.66 2.5 5.97v64.93c0 2.31-.95 4.43-2.49 5.97l-.21.19a8.418 8.418 0 0 1-5.76 2.3H82.6v17.82c0 1.83-1.48 3.31-3.3 3.31-.99 0-1.87-.43-2.47-1.12zm325.96-10.13 17.14-16.43c.66-.64 1.52-.95 2.38-.95l50.87-.02c.53 0 1.03-.22 1.37-.56.34-.35.57-.85.57-1.38V34.44c0-.52-.23-1.02-.58-1.36-.35-.35-.84-.58-1.36-.58h-88.76c-.51 0-1.01.23-1.36.58-.35.35-.58.84-.58 1.36v58.62c0 .52.22 1.02.58 1.37.34.34.84.57 1.36.57h14.94c1.89 0 3.43 1.55 3.43 3.44v13.96zM255.64 393.17c11.22 0 20.32 9.1 20.32 20.32s-9.1 20.31-20.32 20.31-20.31-9.09-20.31-20.31c0-11.22 9.09-20.32 20.31-20.32zm-52.16-115.82c26.42 29.69 86.25 24.46 108.37.15-5.14-5.74-10.61-13.78-15.32-20.68-1.06-1.55-2.07-3.04-3.04-4.44-9.98 6.72-21.86 10.85-36.76 10.81-16.59-.04-29.5-5.73-40.23-14.43-3.02 8.99-7.43 21.37-11.69 27.27-.38.53-.83.97-1.33 1.32zm102.84 52.62H92.33c-8.14 0-14.75 7.62-13.53 16.93l12.82 99.07H59.03c.02-52.91-18.75-117.82 36.61-148.69 20.62-11.5 78.61-15.4 101.79-30.59 3.55-6.65 7.48-18.59 9.82-25.71.27-.8-.16.52.24-.69-8.52-9.15-15.48-19.96-22.17-30.59l-19.09-30.35c-6.98-10.42-10.61-19.94-10.84-27.74-.1-3.68.52-7.02 1.88-9.94 1.42-3.07 3.61-5.64 6.57-7.63 1.37-.93 2.92-1.71 4.62-2.36-1.24-16.46-1.7-37.22-.9-54.58.41-4.13 1.2-8.25 2.35-12.37 6.99-24.98 28.46-42.97 52.98-51.44 11.89-4.11 7.3-13.91 19.33-13.26 28.5 1.56 72.47 19.92 89.37 39.41 23.68 27.3 17.57 60.91 16.77 94.21 5.3 1.61 8.69 4.97 10.08 10.4 1.54 6.02-.13 14.51-5.24 26.08h-.01c-.1.21-.2.42-.32.62l-21.76 35.84c-8.39 13.81-16.91 27.66-28.27 38.3l-.56.51c1.09 1.57 2.27 3.29 3.5 5.1 3.78 5.54 8.08 11.85 12.07 16.78 23.64 14.7 80.55 18.66 100.88 30 50.9 28.37 33.5 98.44 36.46 148.69h-32.44l12.82-99.07c1.21-9.32-5.39-16.93-13.53-16.93H306.32zM179.47 140.49c-4.23.17-7.43 1.05-9.63 2.52-1.25.84-2.17 1.91-2.76 3.18-.65 1.42-.95 3.14-.9 5.12.17 5.81 3.21 13.4 9.1 22.15l.08.13 19.1 30.36c7.66 12.18 15.68 24.59 25.66 33.71 9.59 8.77 21.23 14.71 36.61 14.75 16.67.04 28.86-6.14 38.75-15.4 10.29-9.62 18.41-22.83 26.41-36l21.51-35.43c4.01-9.15 5.47-15.27 4.55-18.86-.54-2.14-2.91-3.18-6.93-3.39-.85-.04-1.73-.05-2.62-.03-.96.03-1.96.1-3 .19-.58.06-1.13.02-1.67-.1-1.91.1-3.88-.03-5.89-.33l7.37-32.6c-54.66 8.62-95.54-31.98-153.32-8.11l4.16 38.42c-2.33.11-4.54.03-6.58-.28zm249.61 33.4c4.09 0 7.41 3.32 7.41 7.42 0 4.09-3.32 7.42-7.41 7.42-4.1 0-7.43-3.33-7.43-7.42 0-4.1 3.33-7.42 7.43-7.42zm30.69 31.85 14.85-25.67 19.79 25.53v14.35h-84.92v-4.94l13.49-.31 6.18-15.15 3.09 10.82h9.28l8.04-20.72 10.2 16.09zm-55.47-55.26h95.3c3.4 0 6.51 1.4 8.76 3.64l.2.23c2.13 2.23 3.44 5.26 3.44 8.54v61.14c0 3.39-1.4 6.5-3.65 8.75-2.27 2.26-5.35 3.66-8.75 3.66h-95.3c-3.39 0-6.5-1.41-8.75-3.66a12.327 12.327 0 0 1-3.65-8.75v-61.14c0-3.41 1.4-6.52 3.65-8.77a12.36 12.36 0 0 1 8.75-3.64zm95.3 7.83h-95.3c-1.25 0-2.4.52-3.23 1.34-.82.83-1.34 1.98-1.34 3.24v61.14c0 1.26.52 2.41 1.34 3.23a4.5 4.5 0 0 0 3.23 1.35h95.3c1.25 0 2.4-.51 3.22-1.34a4.54 4.54 0 0 0 1.35-3.24v-61.14c0-1.2-.47-2.3-1.21-3.12l-.13-.12a4.61 4.61 0 0 0-3.23-1.34zm-98.87-81c-1.9 0-3.45-1.54-3.45-3.44s1.55-3.44 3.45-3.44h47.56a3.44 3.44 0 1 1 0 6.88h-47.56zm0-21.1c-1.9 0-3.45-1.54-3.45-3.44s1.55-3.45 3.45-3.45h58.32c1.9 0 3.44 1.55 3.44 3.45 0 1.9-1.54 3.44-3.44 3.44h-58.32zm22.95 45.67-21.8 20.9c-.63.68-1.53 1.11-2.52 1.11-1.9 0-3.44-1.55-3.44-3.44v-18.57h-11.5c-2.42 0-4.64-1-6.23-2.59a8.843 8.843 0 0 1-2.59-6.23V34.44c0-2.41 1.01-4.63 2.6-6.22 1.6-1.6 3.81-2.6 6.22-2.6h88.76c2.41 0 4.63 1 6.22 2.6a8.783 8.783 0 0 1 2.59 6.22v58.62c0 2.42-.99 4.62-2.58 6.22-1.61 1.6-3.81 2.6-6.23 2.6h-49.5zM21.51 156.72h94.58c3.24 0 6.21 1.34 8.34 3.49 2.16 2.13 3.49 5.1 3.49 8.34v61.49c0 3.23-1.34 6.19-3.48 8.33-2.16 2.16-5.12 3.5-8.35 3.5H21.51c-3.24 0-6.2-1.34-8.35-3.48l-.24-.27c-2-2.12-3.23-4.97-3.23-8.08v-61.49c0-3.24 1.33-6.2 3.47-8.34 2.16-2.15 5.12-3.49 8.35-3.49zm38.98 32.42 19.88 13.87c.35.21.66.49.9.85.94 1.35.6 3.21-.75 4.14l-19.84 13.71c-.52.43-1.18.68-1.89.68-1.65 0-2.99-1.34-2.99-2.99v-27.83c.02-.59.19-1.19.56-1.7a2.957 2.957 0 0 1 4.13-.73zm59.62-13.08H17.49v53.98c0 1.03.39 1.98 1.02 2.68l.17.16c.73.72 1.74 1.18 2.83 1.18h94.58c1.1 0 2.12-.45 2.83-1.17.74-.74 1.19-1.75 1.19-2.85v-53.98zM77.98 67.73c2.4 0 4.35 1.94 4.35 4.34 0 2.39-1.95 4.34-4.35 4.34H32.35c-2.39 0-4.34-1.95-4.34-4.34 0-2.4 1.95-4.34 4.34-4.34h45.63zm0-23.16c2.4 0 4.35 1.95 4.35 4.34 0 2.4-1.95 4.35-4.35 4.35H22.03c-2.4 0-4.35-1.95-4.35-4.35 0-2.39 1.95-4.34 4.35-4.34h55.95z"
+                />
+              </svg>
+              <span class="fw-bold">Social Media</span>
+            </div>
+          </div>
+          <div
+            class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3"
+          >
+            <div
+              class="box d-flex flex-column align-items-center justify-content-center gap-2 rounded-3 py-3"
+            >
+              <?xml version="1.0" encoding="utf-8"?><svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="122.879px"
+                height="96.568px"
+                viewBox="0 0 122.879 96.568"
+                enable-background="new 0 0 122.879 96.568"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M5.535,15.447h98.221c1.527,0,2.891,0.62,3.883,1.611c0.99,0.991,1.611,2.396,1.611,3.882v70.134 c0,1.528-0.621,2.891-1.611,3.883c-0.082,0.082-0.166,0.165-0.289,0.247c-0.951,0.868-2.23,1.363-3.635,1.363H5.494 c-1.528,0-2.892-0.619-3.883-1.61S0,92.562,0,91.075V20.941c0-1.528,0.62-2.891,1.611-3.882s2.396-1.611,3.883-1.611H5.535 L5.535,15.447z M28.218,34.489c4.354,0,7.882,3.528,7.882,7.882s-3.528,7.883-7.882,7.883c-4.354,0-7.882-3.529-7.882-7.883 C20.335,38.018,23.864,34.489,28.218,34.489L28.218,34.489z M61.389,68.316l15.766-27.258l16.748,42.363l-78.165-0.001v-5.254 l6.57-0.327l6.567-16.093l3.282,11.496h9.855l8.537-22.004L61.389,68.316L61.389,68.316z M21.891,6.525 c-1.817,0-3.263-1.486-3.263-3.263C18.628,1.445,20.115,0,21.891,0h97.726c1.816,0,3.262,1.487,3.262,3.263v68.895 c0,1.818-1.486,3.264-3.262,3.264c-1.818,0-3.264-1.487-3.264-3.264V6.567H21.891V6.525L21.891,6.525z M102.723,21.974H6.567 v68.027h96.155V21.974L102.723,21.974z"
+                  />
+                </g>
+              </svg>
+              <span class="fw-bold">Exhibition</span>
+            </div>
+          </div>
+          <div
+            class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3"
+          >
+            <div
+              class="box d-flex flex-column align-items-center justify-content-center gap-2 rounded-3 py-3"
+            >
+              <?xml version="1.0" encoding="utf-8"?><svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 122.55"
+                style="enable-background: new 0 0 122.88 122.55"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M4.52,0h116.05c1.27,0,2.32,1.04,2.32,2.32v7.86c0,1.27-1.04,2.32-2.32,2.32h-1.68v60.31 c0,0.92-0.38,1.77-0.99,2.38l0,0c-0.61,0.61-1.46,0.99-2.39,0.99H91.63v4.49h-4.92v6.97c-1.45-2.42-3.25-4.29-5.23-5.59 c-2.36-1.55-4.97-2.32-7.6-2.31c-2.65,0.01-5.25,0.82-7.6,2.4c-2.53,1.71-4.74,4.36-6.26,7.91h-8.64c-0.16-0.06-0.33-0.12-0.5-0.18 c-1.46-0.51-2.98-0.76-4.44-0.76c-1.46,0-2.97,0.25-4.44,0.76c-0.17,0.06-0.33,0.12-0.5,0.18h-3.15v-9.38h-4.92v-4.49H9.58 c-0.93,0-1.78-0.38-2.39-0.99c-0.06-0.06-0.11-0.12-0.16-0.18c-0.52-0.59-0.83-1.37-0.83-2.2V12.5H4.52 c-1.27,0-2.32-1.04-2.32-2.32V2.32C2.2,1.04,3.24,0,4.52,0L4.52,0z M66.15,108.12c-10.06,0-3.44,0.79-2.07-10.15 c2.05-16.36,17.6-16.36,19.9,0c1.47,10.52,7.78,10.15-2.07,10.15h-3.93c-0.02,2.68-0.43,4.05,2.35,5.55 c1.42,0.77,4.06,1.34,6.31,2.23c3.44-2.94,9.55-1,10.18-6.39c0.1-0.82-1.84-3.95-2.28-5.45c-0.95-1.52-1.29-3.92-0.25-5.52 c0.41-0.64,0.24-2.96,0.24-3.83c0-8.71,15.27-8.72,15.27,0c0,1.1-0.25,3.13,0.34,3.99c1,1.45,0.48,4.02-0.36,5.36 c-0.54,1.58-2.6,4.56-2.42,5.45c1.48,7.54,11.76-0.53,11.76,13.04c-39.7,0-79.41,0-119.11,0c0-13.79,13.02-6.16,14.02-14.61 c0.11-0.92-2.06-4.43-2.56-6.11c-1.06-1.7-1.45-4.4-0.28-6.19c0.46-0.71,0.27-3.31,0.27-4.3c0-9.77,17.11-9.77,17.11,0 c0,1.24-0.28,3.51,0.39,4.48c1.12,1.62,0.54,4.5-0.4,6.01c-0.61,1.77-2.91,5.11-2.72,6.11c0.72,3.65,9.82,6.13,12.99,7.47 c1.79-0.92,3.23-2.01,3.38-3.27c0.08-0.66-1.47-3.15-1.82-4.35c-0.76-1.21-1.03-3.13-0.2-4.41c0.33-0.51,0.19-2.36,0.19-3.06 c0-6.95,12.19-6.96,12.19,0c0,0.88-0.2,2.5,0.27,3.19c0.8,1.16,0.39,3.21-0.29,4.28c-0.43,1.26-2.07,3.64-1.93,4.35 c0.9,4.56,5.83,1.97,8.16,5.16c2.2-1.73,6.58-2.21,9.25-3.81c2.44-1.46,2.03-2.93,2.01-5.36L66.15,108.12L66.15,108.12 L66.15,108.12z M30.65,59.82h20.61v-5.86h-0.99c-0.52,0-0.95-0.43-0.95-0.95v-2.37c0-1.82,1.49-3.32,3.32-3.32h0.92 c1.82,0,3.32,1.49,3.32,3.32v2.36c0,0.52-0.43,0.95-0.95,0.95h-0.99v5.86h15v-5.86h-0.99c-0.52,0-0.95-0.43-0.95-0.95v-2.37 c0-1.82,1.49-3.32,3.32-3.32h0.92c1.82,0,3.32,1.49,3.32,3.32v2.36c0,0.52-0.43,0.95-0.95,0.95h-0.99v5.86h20.82 c0.86,0,1.56,0.7,1.56,1.56v9.53c0,0.47-0.21,0.9-0.55,1.19h19.35V12.76H10.29V72.1h19.35c-0.34-0.29-0.55-0.71-0.55-1.19v-9.53 C29.09,60.52,29.79,59.82,30.65,59.82L30.65,59.82z"
+                  />
+                </g>
+              </svg>
+              <span class="fw-bold">Events</span>
+            </div>
+          </div>
+          <div
+            class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3"
+          >
+            <div
+              class="box d-flex flex-column align-items-center justify-content-center gap-2 rounded-3 py-3"
+            >
+              <?xml version="1.0" encoding="utf-8"?><svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 107.65"
+                style="enable-background: new 0 0 122.88 107.65"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M26.21,28.03h7.77v-9.36c0-1.4,1.14-2.54,2.54-2.54s2.54,1.14,2.54,2.54v7.65c2.5-1.17,5.09-2.12,7.76-2.85v-9.56 c0-1.41,1.14-2.54,2.54-2.54c1.41,0,2.54,1.14,2.54,2.54v8.47c2.23-0.35,4.52-0.55,6.88-0.59l0.08,0V8.86 c0-1.4,1.14-2.54,2.54-2.54c1.4,0,2.54,1.14,2.54,2.54v13.09c2.26,0.18,4.58,0.5,6.96,0.97v-9.01c0-1.41,1.14-2.54,2.54-2.54 c1.41,0,2.54,1.14,2.54,2.54v10.23c2.52,0.7,5.11,1.57,7.76,2.6v-8.07c0-1.4,1.14-2.54,2.54-2.54c1.4,0,2.54,1.14,2.54,2.54v9.36 h7.82v-6.91h-2.31c-1.34,0-2.43-1.09-2.43-2.43v-1.21c0-1.34,1.09-2.43,2.43-2.43h3.67c-0.69-1.39-1.07-2.96-1.07-4.61 C96.95,4.67,101.63,0,107.39,0c5.77,0,10.44,4.67,10.44,10.44c0,1.66-0.39,3.22-1.07,4.61h3.7c1.34,0,2.43,1.09,2.43,2.43v1.21 c0,1.34-1.09,2.43-2.43,2.43h-2.31v86.53H96.67v-7.44H86.48c-0.06,0-0.11,0.01-0.17,0.01c-0.06,0-0.12,0-0.17-0.01H73.72 c-0.08,0.01-0.17,0.01-0.25,0.01c-0.08,0-0.17,0-0.25-0.01H61.65c-0.08,0.01-0.16,0.01-0.24,0.01c-0.08,0-0.16,0-0.24-0.01H49.62 c-0.08,0.01-0.17,0.01-0.25,0.01c-0.08,0-0.17,0-0.25-0.01H36.69c-0.06,0-0.11,0.01-0.17,0.01c-0.06,0-0.12,0-0.17-0.01H26.21v7.44 H4.74V21.12H2.43C1.09,21.12,0,20.03,0,18.69v-1.21c0-1.34,1.09-2.43,2.43-2.43H6.1c-0.69-1.39-1.07-2.96-1.07-4.61 C5.02,4.67,9.7,0,15.46,0S25.9,4.67,25.9,10.44c0,1.66-0.39,3.22-1.07,4.61h3.7c1.34,0,2.43,1.09,2.43,2.43v1.21 c0,1.34-1.09,2.43-2.43,2.43h-2.31V28.03L26.21,28.03z M51.91,52.07h6.96V37.65c-2.39,0.04-4.71,0.27-6.96,0.66V52.07L51.91,52.07z M63.96,52.07h6.96V38.9c-2.39-0.52-4.71-0.87-6.96-1.07V52.07L63.96,52.07z M70.92,68.19h-6.96v26.95h6.96V68.19L70.92,68.19z M58.87,68.19h-6.96v26.95h6.96V68.19L58.87,68.19z M60.21,60.82l-1.59,4.15h5.58l-1.47-4.21c0.93-0.47,1.58-1.45,1.58-2.57 c0-1.59-1.3-2.89-2.89-2.89c-1.59,0-2.89,1.3-2.89,2.89C58.53,59.35,59.21,60.36,60.21,60.82L60.21,60.82L60.21,60.82z M96.67,33.1 h-7.82v5.75h7.82V33.1L96.67,33.1z M96.67,43.91h-7.82v51.23h7.82V43.91L96.67,43.91z M26.21,95.14h7.77V43.91h-7.77V95.14 L26.21,95.14z M26.21,38.85h7.77V33.1h-7.77V38.85L26.21,38.85z M76.01,29.4v5.56c2.52,0.7,5.11,1.57,7.76,2.6v-5.37 C81.11,31.08,78.52,30.15,76.01,29.4L76.01,29.4z M76.01,40.22v54.93h7.76V43.01C81.11,41.9,78.52,40.97,76.01,40.22L76.01,40.22z M70.92,33.74v-5.66c-2.39-0.52-4.71-0.87-6.96-1.07v5.75C66.22,32.95,68.54,33.27,70.92,33.74L70.92,33.74z M58.87,26.83 c-2.39,0.04-4.71,0.27-6.96,0.66v5.7c2.23-0.35,4.52-0.55,6.88-0.59l0.08,0V26.83L58.87,26.83z M46.82,28.72 c-2.69,0.83-5.27,1.91-7.76,3.23v5.19c2.5-1.17,5.09-2.12,7.76-2.85V28.72L46.82,28.72z M46.82,39.54 c-2.69,0.83-5.27,1.91-7.76,3.23v52.37h7.76V39.54L46.82,39.54z"
+                  />
+                </g>
+              </svg>
+              <span class="fw-bold">Outdoor</span>
+            </div>
+          </div>
+          <div
+            class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3"
+          >
+            <div
+              class="box d-flex flex-column align-items-center justify-content-center gap-2 rounded-3 py-3"
+            >
+              <?xml version="1.0" encoding="utf-8"?><svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 120.19"
+                style="enable-background: new 0 0 122.88 120.19"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M62.95,27.86c2.36-5.34,4.98-10.39,8.11-14.67c6.34-8.7,21.82-19.17,31.29-9.03 c8.48,9.07,1.29,18.98-8.81,23.7h22.85c1.77,0,3.43,0.74,4.57,1.92c1.18,1.18,1.92,2.8,1.92,4.57v12.31c0,1.77-0.74,3.43-1.92,4.57 c-1.07,1.07-2.47,1.77-4.05,1.88v60.08c0,1.92-0.77,3.69-2.06,4.94c-1.25,1.25-3.02,2.06-4.94,2.06H13.12 c-1.92,0-3.69-0.77-4.94-2.06c-1.25-1.25-2.06-3.02-2.06-4.94l0-60.04c-1.62-0.11-3.1-0.81-4.2-1.88C0.74,50.09,0,48.47,0,46.7 V34.39c0-1.77,0.74-3.43,1.92-4.57c1.18-1.18,2.8-1.92,4.57-1.92h23.26c-10.06-4.72-17.25-14.63-8.81-23.7 c9.47-10.17,24.95,0.33,31.29,9.03c3.13,4.31,5.75,9.36,8.11,14.67h2.54L62.95,27.86L62.95,27.86z M83.63,27.86 C106.74,17.62,99.07,0.37,84.44,8.7c-3.43,1.95-6.3,5.6-8.88,9.25c-2.43,3.43-4.61,7.04-6.23,9.91L83.63,27.86L83.63,27.86z M39.69,27.86C16.59,17.62,24.25,0.37,38.88,8.7c3.43,1.95,6.3,5.6,8.88,9.25c2.43,3.43,4.61,7.04,6.23,9.91L39.69,27.86 L39.69,27.86z M111.53,91.07H70.51v23.7h39.44c0.44,0,0.85-0.18,1.14-0.48c0.3-0.3,0.48-0.7,0.48-1.14V91.07H111.53L111.53,91.07z M53.11,91.07H11.5v22.08c0,0.44,0.18,0.85,0.48,1.14c0.3,0.3,0.7,0.48,1.14,0.48h39.99V91.07L53.11,91.07z M11.5,76.66h41.61 V50.57H11.5V76.66L11.5,76.66z M70.47,76.66h41.02V50.57H70.47V76.66L70.47,76.66z"
+                  />
+                </g>
+              </svg>
+              <span class="fw-bold">Backing</span>
+            </div>
+          </div>
+          <div
+            class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3"
+          >
+            <div
+              class="box d-flex flex-column align-items-center justify-content-center gap-2 rounded-3 py-3"
+            >
+              <?xml version="1.0" encoding="utf-8"?><svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 109.07"
+                style="enable-background: new 0 0 122.88 109.07"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M0,55.79h24.83v44.18H0V55.79L0,55.79z M83.64,16.24c1.38-3.11,2.9-6.06,4.73-8.55 c3.69-5.07,12.72-11.17,18.24-5.26c4.94,5.28,0.75,11.06-5.13,13.81h13.32c1.03,0,2,0.43,2.66,1.12c0.69,0.69,1.12,1.63,1.12,2.66 v7.18c0,1.03-0.43,2-1.12,2.66c-0.62,0.62-1.44,1.03-2.36,1.1v33.79c7,0.63,10.78,8.59,4.87,14.42 c-13.9,10.11-28.15,18.43-42.73,25.15c-10.59,6.44-21.18,6.22-31.76,0l-15.64-8.06V59.34h16.61c1.36,0.24,2.72,0.58,4.08,1V30.98 c-0.95-0.06-1.8-0.47-2.45-1.1c-0.69-0.69-1.12-1.63-1.12-2.66v-7.18c0-1.03,0.43-2,1.12-2.66c0.69-0.69,1.63-1.12,2.66-1.12h13.56 c-5.86-2.75-10.05-8.53-5.13-13.81c5.52-5.93,14.54,0.19,18.24,5.26c1.83,2.51,3.35,5.46,4.73,8.55h1.48L83.64,16.24L83.64,16.24z M101.03,70.06H84.24c3.04,2,3.68,6.05-0.56,8.95c-4.52,3.32-10.49,3.13-16.61,2.58c-4.22-0.21-4.4,5.46,0,5.48 c1.53,0.12,3.19-0.24,4.64-0.24c7.64-0.01,13.92-1.47,17.77-7.5l1.93-4.51L101.03,70.06L101.03,70.06z M53.65,61.45 c3.58,1.41,7.15,3.31,10.73,5.45H77.9V53.08H53.65V61.45L53.65,61.45z M107.4,66.9l3.21-1.59c0.46-0.15,0.92-0.27,1.37-0.37V53.08 h-0.02H88.04V66.9H107.4L107.4,66.9z M95.69,16.24c13.47-5.97,9-16.03,0.47-11.17c-2,1.14-3.67,3.27-5.18,5.39 c-1.42,2-2.69,4.1-3.63,5.78H95.69L95.69,16.24z M70.08,16.24c-13.47-5.97-9-16.03-0.47-11.17c2,1.14,3.67,3.27,5.18,5.39 c1.42,2,2.69,4.1,3.63,5.78H70.08L70.08,16.24z M53.65,44.68H77.9V29.47H53.65V44.68L53.65,44.68z M88.02,44.68h23.91V29.47H88.02 V44.68L88.02,44.68z"
+                  />
+                </g>
+              </svg>
+              <span class="fw-bold">Giveways</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Services -->
+    <!-- Start About Us -->
+    <div class="about-us overflow-hidden">
+      <div class="row">
+        <div class="col-lg-6 px-5 mt-4">
+          <div class="head mb-4">
+            <h2 class=""><span class="top">About</span> Us</h2>
+            <p class="">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium repellat ullam voluptate! Id error quo dolorum expedita
+              iure ducimus unde
+            </p>
+          </div>
+          <ul class="content d-flex flex-column gap-3">
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium repellat ullam voluptate! Id error quo dolorum expedita
+              iure ducimus unde, aliquam vitae ex voluptates dignissimos fugiat
+              mollitia cupiditate fuga voluptate.
+            </li>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium repellat ullam voluptate! Id error quo dolorum expedita
+              iure ducimus unde, aliquam vitae ex voluptates dignissimos fugiat
+              mollitia cupiditate fuga voluptate.
+            </li>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium repellat ullam voluptate! Id error quo dolorum expedita
+              iure ducimus unde, aliquam vitae ex voluptates dignissimos fugiat
+              mollitia cupiditate fuga voluptate.
+            </li>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium repellat ullam voluptate! Id error quo dolorum expedita
+              iure ducimus unde, aliquam vitae ex voluptates dignissimos fugiat
+              mollitia cupiditate fuga voluptate.
+            </li>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium repellat ullam voluptate! Id error quo dolorum expedita
+              iure ducimus unde, aliquam vitae ex voluptates dignissimos fugiat
+              mollitia cupiditate fuga voluptate.
+            </li>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium repellat ullam voluptate! Id error quo dolorum expedita
+              iure ducimus unde, aliquam vitae ex voluptates dignissimos fugiat
+              mollitia cupiditate fuga voluptate.
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="pic">
+            <img
+              src="../assets/img/about-us-banner.jpg"
+              alt=""
+              class="mw-100"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About Us -->
+    <!-- Start Blogs -->
+    <div class="blogs pt-5 pb-5">
+      <div class="container">
+        <div class="head mb-4">
+          <h2 class="text-center"><span class="top">Our</span> Latest Blogs</h2>
+          <p class="text-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
+            repellat ullam voluptate! Id error quo dolorum expedita iure ducimus
+            unde
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="box rounded-4 overflow-hidden position-relative">
+              <div class="pic">
+                <img
+                  src="../assets/img/video-editing.jpg"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+              <div
+                class="calender-loc position-absolute py-1 px-3 rounded-5 d-flex align-items-center gap-2"
+              >
+                <i
+                  style="color: var(--second-color); padding-right: 2px"
+                  class="fa-solid fa-calendar-days"
+                ></i>
+                <span>Sep. 10, 2023</span>
+              </div>
+              <div class="info p-3 d-flex flex-column gap-3">
+                <div class="user d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-user"></i>
+                  <span>Rana Esmat</span>
+                </div>
+                <h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                  sint odit modi magni veritatis
+                </h5>
+                <a class="btn d-flex gap-2 align-items-center"
+                  >Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="box rounded-4 overflow-hidden position-relative">
+              <div class="pic">
+                <img
+                  src="../assets/img/video-editing.jpg"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+              <div
+                class="calender-loc position-absolute py-1 px-3 rounded-5 d-flex align-items-center gap-2"
+              >
+                <i
+                  style="color: var(--second-color); padding-right: 2px"
+                  class="fa-solid fa-calendar-days"
+                ></i>
+                <span>Sep. 10, 2023</span>
+              </div>
+              <div class="info p-3 d-flex flex-column gap-3">
+                <div class="user d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-user"></i>
+                  <span>Rana Esmat</span>
+                </div>
+                <h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                  sint odit modi magni veritatis
+                </h5>
+                <a class="btn d-flex gap-2 align-items-center"
+                  >Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="box rounded-4 overflow-hidden position-relative">
+              <div class="pic">
+                <img
+                  src="../assets/img/video-editing.jpg"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+              <div
+                class="calender-loc position-absolute py-1 px-3 rounded-5 d-flex align-items-center gap-2"
+              >
+                <i
+                  style="color: var(--second-color); padding-right: 2px"
+                  class="fa-solid fa-calendar-days"
+                ></i>
+                <span>Sep. 10, 2023</span>
+              </div>
+              <div class="info p-3 d-flex flex-column gap-3">
+                <div class="user d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-user"></i>
+                  <span>Rana Esmat</span>
+                </div>
+                <h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                  sint odit modi magni veritatis
+                </h5>
+                <a class="btn d-flex gap-2 align-items-center"
+                  >Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Blogs -->
+    <!-- Start Clients -->
+    <div class="our-clients mt-5">
+      <div class="container">
+        <div class="head">
+          <h2 class="text-center">
+            <span class="top">Our</span> Success Partners
+          </h2>
+          <p class="text-center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, eos at unde cupiditate quasi,
+          </p>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/Al_Ahly_SC_logo_23.svg"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/eastern-company.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/albarka.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/almagd.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/alnsagon.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/CIS-EGYPT.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/ebs.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/ehna-maak.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/fmc.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/gasco.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/leaders.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/mid-bank.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/posco.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/rattan.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/trust-group.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic d-flex align-items-center justify-content-center">
+                <img
+                  src="../assets/img/Clinets/vision.png"
+                  alt=""
+                  class="mw-100"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Clients -->
+    <!-- Start Footer -->
+    <section class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <div class="ftco-footer d-flex gap-4 flex-column">
+              <div
+                class="pic bg-white p-2 rounded-3 d-flex align-items-center justify-content-center"
+              >
+                <img src="../assets/img/logo.png" alt="" class="mw-100" />
+              </div>
+              <p class="text-white">
+                The organization cooperates with a number of regional and
+                international institutions concerned with human dignity and a
+                better life.
+              </p>
+              <ul class="social-icons d-flex flex-wrap gap-3">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=61559034882010"
+                  class="d-flex align-items-center justify-content-center social-icon"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="#"
+                  class="d-flex align-items-center justify-content-center social-icon"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="#"
+                  class="d-flex align-items-center justify-content-center social-icon"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="#"
+                  class="d-flex align-items-center justify-content-center social-icon"
+                >
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="#"
+                  class="d-flex align-items-center justify-content-center social-icon"
+                >
+                  <i class="fa-brands fa-snapchat"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="#"
+                  class="d-flex align-items-center justify-content-center social-icon"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="#"
+                  class="d-flex align-items-center justify-content-center social-icon"
+                >
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="#"
+                  class="d-flex align-items-center justify-content-center social-icon"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 wd-35 mb-3">
+            <div class="ftco-footer d-flex flex-column gap-4">
+              <h2 class="text-white text-uppercase">About Us</h2>
+              <div
+                id="small-box"
+                class="small-box d-flex justify-content-center align-items-center gap-2"
+              >
+                <div class="cont d-flex flex-column gap-1">
+                  <p class="text-white">
+                    At CortexIMS, we understand the challenges faced by the
+                    construction industry when it comes to digital
+                    transformation. With years of experience, our team has
+                    developed a comprehensive software solution that encompasses
+                    every aspect of construction management.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 wd-10 mb-3">
+            <div
+              class="ftco-footer d-flex gap-4 flex-column align-items-center"
+            >
+              <h2 class="text-white text-uppercase">SITE LINKS</h2>
+              <ul class="d-flex flex-column gap-3">
+                <li>
+                  <a href="./index.html" class="site-link"> Home </a>
+                </li>
+                <li>
+                  <a href="../about/" class="site-link"> About Us </a>
+                </li>
+                <li>
+                  <a href="../our-services/" class="site-link"> Services</a>
+                </li>
+                <li>
+                  <a href="../our-services/" class="site-link"> Portofolio</a>
+                </li>
+                <li>
+                  <a href="../our-services/" class="site-link"> Blogs</a>
+                </li>
+                <li>
+                  <a href="../contact/" class="site-link"> Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="ftco-footer">
+              <h2 class="text-white text-uppercase">HAVE A QUESTIONS?</h2>
+              <div class="info pt-5 d-flex flex-column gap-4">
+                <div
+                  class="info-one d-flex align-items-center gap-3 text-white"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Egypt, Giza, El Haram</p>
+                </div>
+                <div
+                  class="info-one d-flex align-items-center gap-3 text-white"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <a
+                    href="https://wa.me/201005036232"
+                    target="_blank"
+                    class="text-white have"
+                    >+20 100 503 6232
+                  </a>
+                </div>
+                <div
+                  class="info-one d-flex align-items-center gap-3 text-white"
+                >
+                  <i class="fa-solid fa-envelope"></i>
+                  <a
+                    href="mailto:Info@cortexims.com"
+                    target="_blank"
+                    class="text-white have"
+                    >Info@outlineadvertise.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright text-white">
+          <p class="text-center">
+            Copyright ©2024 All rights reserved by Outline For Advertising
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/to-top.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        loop: true,
+        centerSlide: "true",
+        fade: "true",
+        autoplay: {
+          delay: 5000, // set the delay in milliseconds
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 2,
+          },
+          520: {
+            slidesPerView: 3,
+          },
+          950: {
+            slidesPerView: 5,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
