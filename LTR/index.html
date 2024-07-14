@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="../assets/css/all.min.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-clients.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <style></style>
     <title>Home | Outline For Advertising</title>
   </head>
   <body>
@@ -52,21 +54,38 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto gap-3 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
+        <div class="collapse navbar-collapse gap-3" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto gap-3 mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="./index.html"
                 >Home</a
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about/">About us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./our-services/">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./our-services/">Portfolio</a>
+              <div class="dropdown nav-link">
+                <button
+                  data-mdb-button-init
+                  data-mdb-ripple-init
+                  data-mdb-dropdown-init
+                  class="dropdown-toggle p-0 bg-white border-0"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Projects
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./our-services/">Blogs</a>
@@ -75,6 +94,61 @@
               <a class="nav-link" href="./contact/">Contact Us</a>
             </li>
           </ul>
+          <a
+            href="#"
+            class="lang d-flex align-items-center gap-2 text-black fw-bold"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+            >
+              <rect
+                x="1"
+                y="4"
+                width="30"
+                height="24"
+                rx="4"
+                ry="4"
+                fill="#215230"
+              ></rect>
+              <path
+                d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z"
+                opacity=".15"
+              ></path>
+              <path
+                d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z"
+                fill="#fff"
+                opacity=".2"
+              ></path>
+              <path
+                d="M25.47,15.008c.105-.506-.616-3.171-.092-2.76,.071-.184-.288-.624-.39-.863-.362,1.107,.47,3.281,.2,4.749-.205,.431-1.607,.948-1.937,1.134,.74,.218,2.5-.651,2.218-2.26Z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M10.505,16.004c.189-.342,.23-.711,.203-1.119,.285-.116,.625-.309,.739-.323-.078,.268,.108,.557,.485,.52,.075,2.143,.346,1.695,.235-.061,.244-.113,.285-.331,.376-.424,.529,.867,1.302-.28,.818-.752-.005,.039-.118,.415-.118,.415,0,0,.108,.114,.113,.17-.117,.14-.654,.045-.621-.172,.026-.059,.152-.363-.028-.182-.163,.166-.247,.518-.574,.578,.021-.738-.397-2.077-.198-2.519,.186,.233,.189,.069,.075-.16-.189-.337-.287-.981-.469-.283,.189,.786,.217,2.078,.349,2.962-.361-.07-.248-.325-.244-.489-.049-.033-.698,.313-.968,.396-.032-.274-.072-.521-.089-.724,1.012-.097,.623-1.314,.414-1.883,.025-.034,.297,.197,.133-.076-.251-.317-.358-.681-.477-.079,.157,.294,.301,1.089,.451,1.42-.103,.073-.337,.195-.569,.188,.019-.348-.281-1.172-.047-1.233,.161,.185,.185,.105,.072-.126-.195-.297-.349-1.048-.488-.321,.167,.343,.096,.842,.207,1.609-.632-.338-.133-1.385-.652-1.885-.024,.057-.13,.41-.13,.41,.515,.73-.338,2.343-1.17,1.331-.098-.544,.476-2.27-.336-.957-.16,.529-.555,2.134-1.013,.927-.089-.336,.098-1.28-.115-.503-.119,.293,.045,1.443,.567,1.308,.471-.253,.488-1.453,.854-1.754-.724,1.53,.977,2.599,1.429,.747,.013,.287,.224,.749,.612,.848,.023,.228,.06,.525,.094,.838-.072,.022-.144,.042-.217,.059-.605-1.576-2.019,.892-.179,.401,.024,.072,.04,.143,.042,.207-.852,1.187-3.966,1.185-1.934-.889,.066,.024,.191,.147,.18,.158,.073-.112,.11-.232-.09-.308,.33-.876-.875-.159-.14,.119-.149,.156-.5,.385-.715,.519-.167,.094-.68,.407-.803,.479-.057,.104,.455-.213,.61-.266-1.488,2.836,2.314,2.381,3.326,.88Zm-3.208-.938c.106-.053,.207-.104,.29-.15-1.363,2.364,2.618,1.812,2.664,.131,.069-.021,.138-.044,.208-.068,.024,.255,.041,.505,.042,.723-.365,.429-1.203,.928-1.945,1.131-1.368,.433-1.852-.966-1.259-1.766Z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M16.342,16.611c.242-.267,1.915-.721,2.199-.864,.025-.071,.148-.321,.156-.373-.557,.05-2.089,.134-2.7,.103,.126-.108,.736-.422,1.182-.554,.042,.074,.073,.148,.079,.212,.032-.033,.056-.142,.048-.253,.293-.093,.443-.124,.508-.142,.041-.053,.114-.268,.125-.425-.359-.659-1.502-.446-.957,.322-.457,.192-1.222,.541-1.44,.856l-.035,.017c-.009,.017-.069,.266-.089,.343-.262-.782-.341-1.798-.795-2.093-.247,.506,.507,1.512,.517,2.056-.142,.33-1.991,1.757-2.309,.939,1.134-.431,2.304-1.185,1.336-2.289-.01-.041,.115,.017,.188,.02,.053-.113-.348-.347-.448-.46-.089-.016-.103,.303-.102,.38,.123,.179,.492,.887,.586,1.102-.139,.177-.837,.553-1.518,.863,.005-.176,.414-.656,.299-.786-.283,.515-.322-.323-.122-.485,.201-.642-.663,.951-.09,.897-.06,.114-.134,.253-.187,.419-.792,.369-2,.72-2.528,.893,.029-.094,.025-.174-.006-.15-.542,.637-.017-.81-.096-.67-.302,.23-.48,1.59,.087,.861,.44-.099,1.918-.203,2.471-.534,.084,1.499,2.627-.297,2.513-1.062,.064,.906,.55,1.539,1.847,1.609,.003-.103-.038-.425-.038-.425-.164-.023-.579-.086-.68-.326Zm-.913-.73c.257,.005,1.655-.032,1.921-.04-.491,.171-1.171,.271-1.14,.96-.403-.091-.624-.464-.781-.92Z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M12.822,13.817c.459-.246,.482-1.398,.854-1.685-.765,1.473,1.05,2.445,1.404,.667,.322,1.701,2.18,.64,1.302-.691-.241-.549,.228,.023,.066-.334-.251-.316-.358-.681-.477-.079,.16,.291,.317,1.085,.451,1.42-1.359,.72-.927-1.166-1.428-1.825-.024,.057-.13,.41-.13,.41,.838,1.883-1.884,2.344-.998,.137-.447-.722-.639,1.657-1.145,1.614-.411,0-.413-.913-.358-1.107-.292,.019-.146,1.653,.458,1.473Z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M23.777,14.233c.057,.949,.148,1.852,.117,2.524,.349-.356,.155-1.494,.145-2.223,.438,.519,.919,1.113,1.024,1.678,.013,.036,.069-.11,.06-.338,.048-.4-.665-1.312-1.115-1.788,.058-.461-.361-1.665-.114-1.934,.161,.186,.185,.105,.072-.126-.194-.304-.337-1.009-.476-.298,.17,.367,.134,1.245,.25,2.057-.385-.43-.627-.687-.828-.906,.011-.189-.181-.792,.017-.716,.161,.185,.185,.105,.072-.127-.205-.324-.348-1.024-.491-.286,.133,.193,.073,.417,.129,.814-.3-.442-.684-.627-.168-.578-.212-.149-1.029-.919-.813-.171,.305,.143,.63,.818,1.022,1.192,.063,.847,.258,2.221,.288,3.015-.809,.711-.96,.011-1.425-.246,.002-.225-.005-.444-.005-.573,.11-.505-.579-3.324-.041-2.908-.042-.23-.467-1.414-.568-.555,.225,.773,.255,2.393,.371,3.462,.011,.101,.024,.291,.035,.497-.002,0-.003-.001-.004-.002-.664,.19-.965,2.265-1.701,1.066,1.334-1.002,.41-3.321,.327-4.613,.008-.082,.139,.112,.207,.126,.049-.187-.281-.67-.399-.912-.476,.972,.751,3.11,.284,4.421,.061-.629-.685-1.392-1.221-1.883,.048-.267-.519-2.128-.024-1.609,.045-.023-.005-.16-.067-.282-.198-.331-.312-.975-.476-.273,.137,.173,.197,1.62,.287,1.904-.317-.37-1.855-1.462-1.123-1.362-.006-.02-.038-.068-.119-.117-.276-.09-.873-.788-.694-.054,.038,.003,.106,.049,.155,.107,.379,.518,1.263,1.37,1.843,1.886,.221,2.776,.599,3.546,.278,.267,.461,.469,.995,.976,1.103,1.565-.097,.201-.238,.38-.445,.525-.058-.379,.005-.686-.05-.715-.115,.07-.081,.556-.059,.79-1.629,.876-1.893,1.088,.063,.311,.679,1.706,1.129-.408,1.804-.783,.018,.016,.033,.025,.051,.04,.007,.215,.008,.399-.001,.459,.09-.001,.139-.14,.165-.33,1.967,1.537,1.697-1.371,1.455-2.888,.33,.384,.542,.608,.806,.888Z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M22.159,20.66h0s-1.5,0-1.5,0c.115-.083,.176-.205,.159-.327-.01-.077-.087-.135-.181-.143h-.047c-.114,.011-.196,.093-.184,.183l.005,.035,.006,.053c.006,.067,0,.134-.019,.199H9.313c.165,.24,.465,.386,.789,.386l10.116-.006c-.116,.083-.176,.205-.16,.328,.012,.09,.114,.154,.227,.143,.114-.011,.196-.093,.184-.183l-.005-.035-.006-.053c-.006-.067,0-.134,.019-.2h1.248s.035,.058,.035,.058c.031,.053,.071,.1,.117,.142l.064,.053h0c.126,.088,.287,.14,.456,.14,.16,0,.289-.111,.289-.248v-.072c0-.25-.237-.453-.529-.453Z"
+                fill="#fff"
+              ></path>
+            </svg>
+            Arabic
+          </a>
         </div>
       </div>
     </nav>
@@ -168,6 +242,10 @@
           <span>Watch video</span>
         </a>
       </div>
+      <marquee width="100%" direction="right" height="100px">
+        All Printing - Exhibit - Website Design - Social Media - Motion Graphic
+        - Backing - Giveway - Events - Design - Product Design
+      </marquee>
     </div>
     <!-- End Carousel -->
     <!-- Start Services -->
@@ -304,39 +382,6 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 x="0px"
                 y="0px"
-                viewBox="0 0 122.88 122.55"
-                style="enable-background: new 0 0 122.88 122.55"
-                xml:space="preserve"
-              >
-                <style type="text/css">
-                  .st0 {
-                    fill-rule: evenodd;
-                    clip-rule: evenodd;
-                  }
-                </style>
-                <g>
-                  <path
-                    class="st0"
-                    d="M4.52,0h116.05c1.27,0,2.32,1.04,2.32,2.32v7.86c0,1.27-1.04,2.32-2.32,2.32h-1.68v60.31 c0,0.92-0.38,1.77-0.99,2.38l0,0c-0.61,0.61-1.46,0.99-2.39,0.99H91.63v4.49h-4.92v6.97c-1.45-2.42-3.25-4.29-5.23-5.59 c-2.36-1.55-4.97-2.32-7.6-2.31c-2.65,0.01-5.25,0.82-7.6,2.4c-2.53,1.71-4.74,4.36-6.26,7.91h-8.64c-0.16-0.06-0.33-0.12-0.5-0.18 c-1.46-0.51-2.98-0.76-4.44-0.76c-1.46,0-2.97,0.25-4.44,0.76c-0.17,0.06-0.33,0.12-0.5,0.18h-3.15v-9.38h-4.92v-4.49H9.58 c-0.93,0-1.78-0.38-2.39-0.99c-0.06-0.06-0.11-0.12-0.16-0.18c-0.52-0.59-0.83-1.37-0.83-2.2V12.5H4.52 c-1.27,0-2.32-1.04-2.32-2.32V2.32C2.2,1.04,3.24,0,4.52,0L4.52,0z M66.15,108.12c-10.06,0-3.44,0.79-2.07-10.15 c2.05-16.36,17.6-16.36,19.9,0c1.47,10.52,7.78,10.15-2.07,10.15h-3.93c-0.02,2.68-0.43,4.05,2.35,5.55 c1.42,0.77,4.06,1.34,6.31,2.23c3.44-2.94,9.55-1,10.18-6.39c0.1-0.82-1.84-3.95-2.28-5.45c-0.95-1.52-1.29-3.92-0.25-5.52 c0.41-0.64,0.24-2.96,0.24-3.83c0-8.71,15.27-8.72,15.27,0c0,1.1-0.25,3.13,0.34,3.99c1,1.45,0.48,4.02-0.36,5.36 c-0.54,1.58-2.6,4.56-2.42,5.45c1.48,7.54,11.76-0.53,11.76,13.04c-39.7,0-79.41,0-119.11,0c0-13.79,13.02-6.16,14.02-14.61 c0.11-0.92-2.06-4.43-2.56-6.11c-1.06-1.7-1.45-4.4-0.28-6.19c0.46-0.71,0.27-3.31,0.27-4.3c0-9.77,17.11-9.77,17.11,0 c0,1.24-0.28,3.51,0.39,4.48c1.12,1.62,0.54,4.5-0.4,6.01c-0.61,1.77-2.91,5.11-2.72,6.11c0.72,3.65,9.82,6.13,12.99,7.47 c1.79-0.92,3.23-2.01,3.38-3.27c0.08-0.66-1.47-3.15-1.82-4.35c-0.76-1.21-1.03-3.13-0.2-4.41c0.33-0.51,0.19-2.36,0.19-3.06 c0-6.95,12.19-6.96,12.19,0c0,0.88-0.2,2.5,0.27,3.19c0.8,1.16,0.39,3.21-0.29,4.28c-0.43,1.26-2.07,3.64-1.93,4.35 c0.9,4.56,5.83,1.97,8.16,5.16c2.2-1.73,6.58-2.21,9.25-3.81c2.44-1.46,2.03-2.93,2.01-5.36L66.15,108.12L66.15,108.12 L66.15,108.12z M30.65,59.82h20.61v-5.86h-0.99c-0.52,0-0.95-0.43-0.95-0.95v-2.37c0-1.82,1.49-3.32,3.32-3.32h0.92 c1.82,0,3.32,1.49,3.32,3.32v2.36c0,0.52-0.43,0.95-0.95,0.95h-0.99v5.86h15v-5.86h-0.99c-0.52,0-0.95-0.43-0.95-0.95v-2.37 c0-1.82,1.49-3.32,3.32-3.32h0.92c1.82,0,3.32,1.49,3.32,3.32v2.36c0,0.52-0.43,0.95-0.95,0.95h-0.99v5.86h20.82 c0.86,0,1.56,0.7,1.56,1.56v9.53c0,0.47-0.21,0.9-0.55,1.19h19.35V12.76H10.29V72.1h19.35c-0.34-0.29-0.55-0.71-0.55-1.19v-9.53 C29.09,60.52,29.79,59.82,30.65,59.82L30.65,59.82z"
-                  />
-                </g>
-              </svg>
-              <span class="fw-bold">Events</span>
-            </div>
-          </div>
-          <div
-            class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3"
-          >
-            <div
-              class="box d-flex flex-column align-items-center justify-content-center gap-2 rounded-3 py-3"
-            >
-              <?xml version="1.0" encoding="utf-8"?><svg
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
                 viewBox="0 0 122.88 107.65"
                 style="enable-background: new 0 0 122.88 107.65"
                 xml:space="preserve"
@@ -350,6 +395,7 @@
               <span class="fw-bold">Outdoor</span>
             </div>
           </div>
+
           <div
             class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3"
           >
@@ -416,6 +462,39 @@
               <span class="fw-bold">Giveways</span>
             </div>
           </div>
+          <div
+            class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3"
+          >
+            <div
+              class="box d-flex flex-column align-items-center justify-content-center gap-2 rounded-3 py-3"
+            >
+              <?xml version="1.0" encoding="utf-8"?><svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 122.55"
+                style="enable-background: new 0 0 122.88 122.55"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M4.52,0h116.05c1.27,0,2.32,1.04,2.32,2.32v7.86c0,1.27-1.04,2.32-2.32,2.32h-1.68v60.31 c0,0.92-0.38,1.77-0.99,2.38l0,0c-0.61,0.61-1.46,0.99-2.39,0.99H91.63v4.49h-4.92v6.97c-1.45-2.42-3.25-4.29-5.23-5.59 c-2.36-1.55-4.97-2.32-7.6-2.31c-2.65,0.01-5.25,0.82-7.6,2.4c-2.53,1.71-4.74,4.36-6.26,7.91h-8.64c-0.16-0.06-0.33-0.12-0.5-0.18 c-1.46-0.51-2.98-0.76-4.44-0.76c-1.46,0-2.97,0.25-4.44,0.76c-0.17,0.06-0.33,0.12-0.5,0.18h-3.15v-9.38h-4.92v-4.49H9.58 c-0.93,0-1.78-0.38-2.39-0.99c-0.06-0.06-0.11-0.12-0.16-0.18c-0.52-0.59-0.83-1.37-0.83-2.2V12.5H4.52 c-1.27,0-2.32-1.04-2.32-2.32V2.32C2.2,1.04,3.24,0,4.52,0L4.52,0z M66.15,108.12c-10.06,0-3.44,0.79-2.07-10.15 c2.05-16.36,17.6-16.36,19.9,0c1.47,10.52,7.78,10.15-2.07,10.15h-3.93c-0.02,2.68-0.43,4.05,2.35,5.55 c1.42,0.77,4.06,1.34,6.31,2.23c3.44-2.94,9.55-1,10.18-6.39c0.1-0.82-1.84-3.95-2.28-5.45c-0.95-1.52-1.29-3.92-0.25-5.52 c0.41-0.64,0.24-2.96,0.24-3.83c0-8.71,15.27-8.72,15.27,0c0,1.1-0.25,3.13,0.34,3.99c1,1.45,0.48,4.02-0.36,5.36 c-0.54,1.58-2.6,4.56-2.42,5.45c1.48,7.54,11.76-0.53,11.76,13.04c-39.7,0-79.41,0-119.11,0c0-13.79,13.02-6.16,14.02-14.61 c0.11-0.92-2.06-4.43-2.56-6.11c-1.06-1.7-1.45-4.4-0.28-6.19c0.46-0.71,0.27-3.31,0.27-4.3c0-9.77,17.11-9.77,17.11,0 c0,1.24-0.28,3.51,0.39,4.48c1.12,1.62,0.54,4.5-0.4,6.01c-0.61,1.77-2.91,5.11-2.72,6.11c0.72,3.65,9.82,6.13,12.99,7.47 c1.79-0.92,3.23-2.01,3.38-3.27c0.08-0.66-1.47-3.15-1.82-4.35c-0.76-1.21-1.03-3.13-0.2-4.41c0.33-0.51,0.19-2.36,0.19-3.06 c0-6.95,12.19-6.96,12.19,0c0,0.88-0.2,2.5,0.27,3.19c0.8,1.16,0.39,3.21-0.29,4.28c-0.43,1.26-2.07,3.64-1.93,4.35 c0.9,4.56,5.83,1.97,8.16,5.16c2.2-1.73,6.58-2.21,9.25-3.81c2.44-1.46,2.03-2.93,2.01-5.36L66.15,108.12L66.15,108.12 L66.15,108.12z M30.65,59.82h20.61v-5.86h-0.99c-0.52,0-0.95-0.43-0.95-0.95v-2.37c0-1.82,1.49-3.32,3.32-3.32h0.92 c1.82,0,3.32,1.49,3.32,3.32v2.36c0,0.52-0.43,0.95-0.95,0.95h-0.99v5.86h15v-5.86h-0.99c-0.52,0-0.95-0.43-0.95-0.95v-2.37 c0-1.82,1.49-3.32,3.32-3.32h0.92c1.82,0,3.32,1.49,3.32,3.32v2.36c0,0.52-0.43,0.95-0.95,0.95h-0.99v5.86h20.82 c0.86,0,1.56,0.7,1.56,1.56v9.53c0,0.47-0.21,0.9-0.55,1.19h19.35V12.76H10.29V72.1h19.35c-0.34-0.29-0.55-0.71-0.55-1.19v-9.53 C29.09,60.52,29.79,59.82,30.65,59.82L30.65,59.82z"
+                  />
+                </g>
+              </svg>
+              <span class="fw-bold">Events</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -434,40 +513,24 @@
           </div>
           <ul class="content d-flex flex-column gap-3">
             <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Laudantium repellat ullam voluptate! Id error quo dolorum expedita
-              iure ducimus unde, aliquam vitae ex voluptates dignissimos fugiat
-              mollitia cupiditate fuga voluptate.
+              Outline Advertising is a full-service marketing agency enhancing
+              the outline advertising presence of business-to-business and
+              business-to-consumer companies across the Egypt. We focus on
+              providing custom marketing services to address unique client
+              needs, customer profiles, and budgetary concerns, created in-house
+              by our team of skilled marketing specialists.
             </li>
             <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Laudantium repellat ullam voluptate! Id error quo dolorum expedita
-              iure ducimus unde, aliquam vitae ex voluptates dignissimos fugiat
-              mollitia cupiditate fuga voluptate.
+              Founded in 2014, outline continues to be led business to this day.
+              With CEO Eng.Rana Esmat ,in charge of day-to-day operation.
             </li>
             <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Laudantium repellat ullam voluptate! Id error quo dolorum expedita
-              iure ducimus unde, aliquam vitae ex voluptates dignissimos fugiat
-              mollitia cupiditate fuga voluptate.
-            </li>
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Laudantium repellat ullam voluptate! Id error quo dolorum expedita
-              iure ducimus unde, aliquam vitae ex voluptates dignissimos fugiat
-              mollitia cupiditate fuga voluptate.
-            </li>
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Laudantium repellat ullam voluptate! Id error quo dolorum expedita
-              iure ducimus unde, aliquam vitae ex voluptates dignissimos fugiat
-              mollitia cupiditate fuga voluptate.
-            </li>
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Laudantium repellat ullam voluptate! Id error quo dolorum expedita
-              iure ducimus unde, aliquam vitae ex voluptates dignissimos fugiat
-              mollitia cupiditate fuga voluptate.
+              Outline works with an elite group of engineers and visual artists
+              to provide everything that is new and distinctive ,we are
+              passionate about creativity, innovation, and driving results for
+              our clients. As a leading advertising agency , we specialize in
+              crafting compelling campaigns that resonate with audiences and
+              elevate brands to new heights.
             </li>
           </ul>
         </div>
@@ -768,6 +831,101 @@
       </div>
     </div>
     <!-- End Clients -->
+    <!-- Start Contact Us -->
+    <div class="form-container mt-5 pt-4 pb-5">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 aos-init aos-animate"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+          >
+            <h2 class="top">Contact Us</h2>
+            <form action="/" class="contact-form pt-3">
+              <input
+                id="fullName"
+                class="form-control"
+                type="text"
+                placeholder="Full Name"
+                required=""
+              /><br />
+              <input
+                id="phone"
+                class="form-control"
+                type="tel"
+                placeholder="Phone Number"
+                required=""
+              /><br />
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Email"
+                name=""
+                id="email"
+                required=""
+              /><br />
+              <input
+                class="form-control"
+                type="text"
+                placeholder="subject"
+                name=""
+                id="subject"
+              /><br />
+              <textarea
+                id="message"
+                class="form-control"
+                name=""
+                placeholder="Message"
+                cols="30"
+                rows="10"
+                required=""
+              ></textarea
+              ><br />
+              <input
+                id="contactButton"
+                class="btn mb-3"
+                type="submit"
+                value="Send Message"
+              />
+            </form>
+          </div>
+          <div
+            class="col-lg-6 aos-init aos-animate"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <div
+              class="pic position-relative d-flex align-items-center justify-content-center h-100"
+            >
+              <img
+                class="mw-100 h-100 object-fit-cover"
+                src="./assets/img/New Giza TH-123-Edit copy.jpg"
+                alt="Contact us"
+              />
+            </div>
+          </div>
+          <!-- <div class="col-lg-12">
+              <div class="info d-flex flex-column gap-4">
+                <div class="info-one d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>217 Discovery Gardens Street 11, Dubai, UAE</p>
+                </div>
+                <div class="info-one d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+971-56-74-75-666</p>
+                </div>
+                <div class="info-one d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>Info@cortexims.com</p>
+                </div>
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Us -->
     <!-- Start Footer -->
     <section class="footer py-5">
       <div class="container">
@@ -779,11 +937,6 @@
               >
                 <img src="../assets/img/logo.png" alt="" class="mw-100" />
               </div>
-              <p class="text-white">
-                The organization cooperates with a number of regional and
-                international institutions concerned with human dignity and a
-                better life.
-              </p>
               <ul class="social-icons d-flex flex-wrap gap-3">
                 <a
                   target="_blank"
@@ -941,41 +1094,10 @@
     <!-- Initialize Swiper -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/to-top.js"></script>
+    <script src="../assets/js/swiper.js"></script>
     <script src="../assets/js/main.js"></script>
     <script>
       AOS.init();
-    </script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 25,
-        loop: true,
-        centerSlide: "true",
-        fade: "true",
-        autoplay: {
-          delay: 5000, // set the delay in milliseconds
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicBullets: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          0: {
-            slidesPerView: 2,
-          },
-          520: {
-            slidesPerView: 3,
-          },
-          950: {
-            slidesPerView: 5,
-          },
-        },
-      });
     </script>
   </body>
 </html>

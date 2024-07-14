@@ -73,18 +73,20 @@ a {
   -moz-box-shadow: 0 1px 3px rgba(35, 35, 35, 0.15);
   box-shadow: 0 1px 3px rgba(35, 35, 35, 0.15);
 }
-.navbar-nav .nav-link {
+.navbar-nav .nav-item {
   position: relative;
 }
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-item:hover,
+.navbar-nav .nav-item:hover .nav-link {
   color: var(--second-color) !important;
 }
-.navbar-nav .nav-link.active {
+.navbar-nav .nav-item.active,
+.navbar-nav .nav-item.active .nav-link {
   position: relative;
   color: var(--second-color) !important;
 }
-.navbar-nav .nav-link::before,
-.navbar-nav .nav-link.active::before {
+.navbar-nav .nav-item::before,
+.navbar-nav .nav-item.active::before {
   content: "";
   position: absolute;
   top: 0;
@@ -94,17 +96,20 @@ a {
   height: 4px;
   transition: var(--main-transition);
 }
-.navbar-nav .nav-link.active::before {
+.navbar-nav .nav-item.active::before {
   width: 100% !important;
 }
 
-.navbar-nav .nav-link:hover:before,
-.navbar-nav .nav-link.active:hover:before {
+.navbar-nav .nav-item:hover:before,
+.navbar-nav .nav-item.active:hover:before {
   width: 100%;
 }
 .navbar-home .logo,
 .navbar .logo {
   width: 100px;
+}
+.navbar .dropdown button {
+  color: var(--main-color) !important;
 }
 /* .navbar-home .logo-black {
   display: none;
@@ -137,6 +142,14 @@ a {
   }
 } */
 
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
 /* End Navbar */
 /* Start Landing */
 .landing {
@@ -252,7 +265,7 @@ a {
   font-size: 1.2rem;
 }
 .carousel-inner {
-  height: 100vh;
+  height: calc(100vh - 78px);
 }
 .carousel-inner::before {
   content: "";
@@ -381,55 +394,17 @@ a {
 .carousel .content .links-on span a:hover {
   background-color: unset;
 }
-/* End Carousel */
-/* Start Swiper */
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  width: 120px;
-}
-
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
-  height: 230px;
-}
-.swiper-button-prev,
-.swiper-rtl .swiper-button-next {
-  left: 45%;
-  top: 80%;
-}
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-  right: 45%;
-  top: 80%;
-}
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 14px;
+.carousel marquee {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
   color: white;
-  background-color: var(--main-color);
-  padding: 8px 10px;
-  border-radius: 50%;
+  font-size: 30px;
 }
-.swiper-pagination {
-  display: none;
-}
+/* End Carousel */
+
 /* End Swiper */
 /* Start Services */
 .our-services {
@@ -489,7 +464,7 @@ a {
   object-fit: cover;
 }
 .services .box .content {
-  height: 290px;
+  height: 240px;
 }
 .services .box .content .cont {
   display: flex;
@@ -529,7 +504,10 @@ a {
 /* End Services */
 /* Start About Us */
 .about-us .pic {
-  height: 100vh;
+  height: 80vh;
+}
+.about-us .pic img {
+  width: 100%;
 }
 /* End About Us */
 /* Start Blogs */
@@ -547,7 +525,7 @@ a {
 }
 .blogs .calender-loc {
   right: 5%;
-  top: 45%;
+  top: 50%;
   background-color: #1a1a1b;
   color: white;
   font-size: 14px;
@@ -559,9 +537,9 @@ a {
 }
 /* End Blogs */
 /* Start Our Client */
-.our-clients .pic {
+/* .our-clients .pic {
   width: 250px;
-}
+} */
 /* End Our Client */
 /* Start Contact */
 .login .pic {
@@ -633,11 +611,11 @@ a {
   object-fit: cover;
 }
 .form-container #contactButton {
-  background-color: var(--first-color) !important;
+  background-color: var(--main-color) !important;
   color: white !important;
 }
 .form-container #contactButton:hover {
-  background-color: var(--fivth-color) !important;
+  background-color: var(--second-color) !important;
 }
 @media (max-width: 992px) {
   .form-container .pic img {
@@ -667,18 +645,33 @@ a {
   height: 40px;
 }
 /* End Contact */
+/* Start Blog Details */
+.blog-details .blog-logo {
+  width: 60px;
+}
+.blog-details .cover-img {
+  width: 100%;
+  height: 400px;
+}
+/* End Blog Details */
 /* Start Footer */
 .footer {
   background-color: var(--main-color);
+  position: relative;
+  overflow: hidden;
 }
 .footer .pic {
   width: 150px;
+  position: absolute;
+  top: -9px;
+  padding-top: 4rem !important;
+  padding-bottom: 1rem !important;
 }
 .footer h2 {
   position: relative;
   font-size: 18px;
 }
-.footer h2::after {
+/* .footer h2::after {
   position: absolute;
   bottom: -15px;
   left: 0;
@@ -686,11 +679,14 @@ a {
   width: 70px;
   height: 1px;
   background: white;
-}
+} */
 @media (max-width: 992px) {
   .footer .ftco-footer {
     align-items: unset !important;
   }
+}
+.footer .social-icons {
+  margin-top: 7rem;
 }
 .footer .social-icon {
   height: 50px;
